@@ -52,4 +52,16 @@ totalConsultas.forEach(function (c) {
 });
 
 
+let isapreDental = dental.filter(function (c) {
+    return c.prevision === "ISAPRE";
+});
+document.write("<p>Pacientes con ISAPRE en dental:</p>");
+isapreDental.forEach(function (c) {
+    document.write(`<p>${c.paciente} - ${c.prevision}</p>`);
+});
+
+
+let totalFonasaTraumatologia = traumatologia.filter(function (c) {
+    return c.prevision === "FONASA";
+});
 
